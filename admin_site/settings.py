@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'flixterix_api.urls'
+ROOT_URLCONF = 'admin_site.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'flixterix_api.wsgi.application'
+WSGI_APPLICATION = 'admin_site.wsgi.application'
 
 
 # Database
