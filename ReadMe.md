@@ -6,4 +6,4 @@
 * ReactJS 
 
 ## Data Model 
-* There are three types of objects in the Flixterix API: movies, dates, and genres. 
+* There are three types of objects in the Flixterix database: movies, dates, and genres. 
