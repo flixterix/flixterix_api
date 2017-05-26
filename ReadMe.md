@@ -20,3 +20,10 @@
 Properties with one asterisk (*) are primary keys.  
 Properties with two asterisks (**) are foreign keys. 
 
+## Rest API Design 
+* Documentation for REST API design can be found here: [Flixterix API Design](https://docs.google.com/document/d/1VHmcaBrJ3CMeh0CeDJUE2g_rD16d3RGs1GeBVMAb1I0/edit)  
+
+
+Thank you! 
+
+
