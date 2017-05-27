@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework'
+    'flixterix_api_app.apps.FlixterixApiConfig'
 ]
 
 MIDDLEWARE = [
@@ -77,13 +79,21 @@ WSGI_APPLICATION = 'admin_site.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'Flixterix',
-        'USER': 'Shalram',
-        'PASSWORD': 'ramshal',
+        'NAME': 'flixterix',
+        'USER': 'spyapali',
+        'PASSWORD': 'sainath1129',
         'HOST': 'localhost',
-        'PORT': '8000'
+        'PORT': '5432'
     }
 }
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
+
 
 
 # Password validation

@@ -14,6 +14,24 @@ def seed_data(file_name):
     :return: Table
     """
 
+    # movie id | movie title | release date | video release date |
+    # IMDb URL | unknown | Action | Adventure | Animation |
+    # Children's | Comedy | Crime | Documentary | Drama | Fantasy |
+    # Film-Noir | Horror | Musical | Mystery | Romance | Sci-Fi |
+    # Thriller | War | Western |
+
     movie_data=open(file_name)
     for row in movie_data:
-        mt,rd,nr,imdb_url=row.split("|")
+        # splice the data
+        movie_id, movie_title, release_date, video_release_date, \
+            IMDB_URL, unknown, action, adventure, animation, children, comedy, \
+            crime, documentary, drama, fantasy, film_noir, horror, musical, \
+            mystery, romance, science_fiction, thriller, war, western = row.split("|")
+
+        # add the data to the database.
+
+
+
+
+
+
