@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
+import datetime
 
 # Create your models here.
 
@@ -14,6 +15,16 @@ class Date(models.Model):
 
     def __str__(self):
         return self.release_year
+
+    def validate_year(self):
+        """
+        validate that the input to the database is a legitimate year. 
+        """
+        try:
+            datetime.datetime.strptime(self.release_year, '%Y')
+        except Exception as e:
+            # In main function, do not save object to the database.
+            pass
 
 
 class Genre(models.Model):
