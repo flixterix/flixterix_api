@@ -8,4 +8,4 @@ def index(request):
     """
     Index base page.
     """
-    return HttpResponse("Hello world. Welcome to the best movie API ever.")
+    return HttpResponse("Hello world, I'm Shalini!!! Welcome to the best movie API ever.")
