@@ -16,10 +16,19 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib.auth.models import User
 from django.contrib import admin
+from flixterix_api_app import views
 from rest_framework import routers, serializers, viewsets
 
+
+router = routers.SimpleRouter()
+# router.register(r'dates', views.DateViewSet)
+# router.register(r'genres', views.GenreViewSet)
+# router.register(r'movies', views.MovieViewSet)
+
+
 urlpatterns = [
-    url(r'^index/', include('flixterix_api_app.urls')),
+    # url(r'^', include(router.urls)),
     url(r'^admin/', admin.site.urls),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
+

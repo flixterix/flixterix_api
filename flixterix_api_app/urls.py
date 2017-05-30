@@ -5,6 +5,3 @@ from rest_framework import routers, serializers, viewsets
 
 from . import views
 
-urlpatterns = [
-    url(r'^$', views.index, name='index')
-]
